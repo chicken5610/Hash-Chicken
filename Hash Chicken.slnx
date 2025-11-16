@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Hash Chicken/Hash Chicken.csproj">
+    <BuildType Project="Release" />
+  </Project>
+</Solution>
