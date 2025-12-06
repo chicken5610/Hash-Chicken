@@ -90,5 +90,20 @@ namespace Hash_Chicken
                 }
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //strings to compare
+            string string1 = textBox1.Text;
+            string string2 = UserHash.Text;
+            if (string.Equals(string1, string2, StringComparison.OrdinalIgnoreCase))
+            {
+               MessageBox.Show("The Hashes Match!", "Hash Chicken Comparer", MessageBoxButtons.OK, MessageBoxIcon.Information); 
+            }
+            else
+            {
+                MessageBox.Show("The Hashes Do Not Match!", "Hash Chicken Comparer", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }

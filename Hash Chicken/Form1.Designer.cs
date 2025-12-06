@@ -49,6 +49,8 @@
             button2 = new Button();
             txtFilePath = new TextBox();
             label1 = new Label();
+            UserHash = new TextBox();
+            button3 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -95,11 +97,31 @@
             label1.TabIndex = 4;
             label1.Text = "Sha256";
             // 
+            // UserHash
+            // 
+            UserHash.Location = new Point(173, 330);
+            UserHash.Name = "UserHash";
+            UserHash.Size = new Size(1092, 31);
+            UserHash.TabIndex = 5;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.Silver;
+            button3.Location = new Point(173, 245);
+            button3.Name = "button3";
+            button3.Size = new Size(1092, 79);
+            button3.TabIndex = 6;
+            button3.Text = "Compare";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1277, 411);
+            Controls.Add(button3);
+            Controls.Add(UserHash);
             Controls.Add(label1);
             Controls.Add(txtFilePath);
             Controls.Add(button2);
@@ -120,5 +142,7 @@
         private Button button2;
         private TextBox txtFilePath;
         private Label label1;
+        private TextBox UserHash;
+        private Button button3;
     }
 }
