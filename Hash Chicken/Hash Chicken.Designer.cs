@@ -130,7 +130,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "Form1";
-            Text = "Form1";
+            Text = "Hash Chicken";
             ResumeLayout(false);
             PerformLayout();
         }
