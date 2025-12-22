@@ -7,11 +7,11 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-    <ApplicationIcon>Test.ico</ApplicationIcon>
+    <ApplicationIcon>Hash Chicken Icon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Test.ico" />
+    <Content Include="Hash Chicken Icon.ico" />
   </ItemGroup>
 
   <ItemGroup>
