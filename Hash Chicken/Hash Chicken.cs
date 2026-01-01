@@ -60,9 +60,10 @@ namespace Hash_Chicken
                     {
                         // Extract the Hash value from the result (which is a FileHashInfo object)
                         var fileHashInfo = result[0];  // Get the first object returned (should be a FileHashInfo)
-                        string hash = fileHashInfo.Properties["Hash"].Value.ToString();  // Extract the Hash property
+                        var hashProperty = fileHashInfo.Properties["Hash"];
+                        string? hash = hashProperty?.Value?.ToString();
 
-                        return hash;  // Return the hash string
+                        return hash ?? string.Empty;  // Return the hash string or empty if null
                     }
                     else
                     {
